@@ -215,9 +215,9 @@ def run_UI():
         
         col1, col2, col3, col4= st.columns(4)
         col1.metric("Ticket Promedio", "$45.459")
-        col2.metric("% Costo de la Venta", "24,4%")
-        col3.metric("Ordenes MFC", "351")
-        col4.metric("Utilización MFC", "54%")
+        col2.metric("% Costo de la Venta", "24,6%")
+        col3.metric("Ordenes MFC", "391")
+        col4.metric("Utilización MFC", "60%")
 
 
 
@@ -248,10 +248,12 @@ def run_UI():
         tooltip = "Silva Carvallo"
         folium.Marker([-33.532231859430375, -70.77482864554192], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby_2)
 
-        tooltip = "Consistorial"
+        #tooltip = "Consistorial"
         folium.Marker([-33.48375561020082, -70.54773803862076], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby_2)
 
 
+        tooltip = "Consistorial"
+        folium.Marker([-33.48375561020082, -70.54773803862076], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_2)
 
         ### Anillo 1 
         data_geo = json.load(open('Unimarc.geojson'))
@@ -270,7 +272,7 @@ def run_UI():
         data_geo = json.load(open('Unimarc.geojson'))
         features = []
         for x in data_geo['features']:
-            if x['properties']['name'] in  ('Huechuraba','Los Leones'):
+            if x['properties']['name'] in  ('Huechuraba','Los Leones','Consistorial'):
                 features.append(x)
     
         gson_anillo_2 = {'type':'FeatureCollection','features':features}
@@ -311,7 +313,7 @@ def run_UI():
         data_geo = json.load(open('Unimarc.geojson'))
         features = []
         for x in data_geo['features']:
-            if x['properties']['name'] in  ('Silva Carvallo','Consistorial','Mirador'):
+            if x['properties']['name'] in  ('Silva Carvallo','Mirador'):
                 features.append(x)
     
         gson_anillo_5 = {'type':'FeatureCollection','features':features}
@@ -354,9 +356,9 @@ def run_UI():
         
         col1, col2, col3, col4= st.columns(4)
         col1.metric("Ticket Promedio", "$45.459")
-        col2.metric("% Costo de la Venta", "23,2%")
-        col3.metric("Ordenes MFC", "545")
-        col4.metric("Utilización MFC", "83%")
+        col2.metric("% Costo de la Venta", "23,3%")
+        col3.metric("Ordenes MFC", "585")
+        col4.metric("Utilización MFC", "90%")
 
 
 
@@ -391,6 +393,9 @@ def run_UI():
         folium.Marker([-33.48375561020082, -70.54773803862076], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby_3)
 
 
+        tooltip = "Consistorial"
+        folium.Marker([-33.48375561020082, -70.54773803862076], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_3)
+
 
         ### Anillo 1 
         data_geo = json.load(open('Unimarc.geojson'))
@@ -409,7 +414,7 @@ def run_UI():
         data_geo = json.load(open('Unimarc.geojson'))
         features = []
         for x in data_geo['features']:
-            if x['properties']['name'] in  ('Huechuraba','Los Leones'):
+            if x['properties']['name'] in  ('Huechuraba','Los Leones','Consistorial'):
                 features.append(x)
     
         gson_anillo_2 = {'type':'FeatureCollection','features':features}
@@ -450,7 +455,7 @@ def run_UI():
         data_geo = json.load(open('Unimarc.geojson'))
         features = []
         for x in data_geo['features']:
-            if x['properties']['name'] in  ('Silva Carvallo','Consistorial','Mirador'):
+            if x['properties']['name'] in  ('Silva Carvallo','Mirador'):
                 features.append(x)
     
         gson_anillo_5 = {'type':'FeatureCollection','features':features}
