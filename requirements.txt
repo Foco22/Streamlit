@@ -1,2 +1,2 @@
-pip install folium == 0.12.1
-pip install streamlit_folium == 0.6.13
+folium==0.12.1
+streamlit_folium==0.6.13
