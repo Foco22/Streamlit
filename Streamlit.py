@@ -1,26 +1,14 @@
 import altair as alt
 import pandas as pd
 import streamlit as st
-from vega_datasets import data
 import geopandas
-import altair as alt
-import pandas as pd
-import streamlit as st
-from vega_datasets import data
-
-import pandas as pd # library for data analysis
 import numpy as np
-import json # library to handle JSON files
 from geopy.geocoders import Nominatim 
-# convert an address into latitude and longitude values
 import requests # library to handle requests
 import folium # map rendering library
-import streamlit as st #creating an app
 from streamlit_folium import folium_static 
-#using folium on streamlit
 import json
 
-#st.set_page_config(layout="wide")
 
 
 PAGES = [
