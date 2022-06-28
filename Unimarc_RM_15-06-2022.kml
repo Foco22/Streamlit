@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Unimarc RM</name>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-000000-1200-77-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d000000</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-000000-1200-77-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.8</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d000000</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-000000-1200-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-000000-1200-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-000000-1200-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-424242-2000-77-normal">
+      <LineStyle>
+        <color>ff424242</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d424242</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-424242-2000-77-highlight">
+      <LineStyle>
+        <color>ff424242</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d424242</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-424242-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-424242-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-424242-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-424242-2201-77-normal">
+      <LineStyle>
+        <color>ff424242</color>
+        <width>2.201</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d424242</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-424242-2201-77-highlight">
+      <LineStyle>
+        <color>ff424242</color>
+        <width>3.3015</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d424242</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-424242-2201-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-424242-2201-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-424242-2201-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-795548-2000-77-normal">
+      <LineStyle>
+        <color>ff485579</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d485579</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-795548-2000-77-highlight">
+      <LineStyle>
+        <color>ff485579</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d485579</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-795548-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-795548-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-795548-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-A52714-1200-77-normal">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d1427a5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-A52714-1200-77-highlight">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>1.8</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d1427a5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-A52714-1200-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-A52714-1200-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-A52714-1200-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-E65100-2000-77-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d0051e6</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-E65100-2000-77-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d0051e6</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-E65100-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-E65100-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-E65100-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-FF5252-2000-77-normal">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d5252ff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-FF5252-2000-77-highlight">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d5252ff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-FF5252-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-FF5252-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-FF5252-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Larapinta</name>
+      <description><![CDATA[description: <br>descripción: <br>tienda: <br>nombre: LARAPINTA]]></description>
+      <styleUrl>#poly-000000-1200-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value/>
+        </Data>
+        <Data name="tienda">
+          <value/>
+        </Data>
+        <Data name="nombre">
+          <value>LARAPINTA</value>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.9280675,-33.3059047,0
+              -70.8611213,-33.3378225,0
+              -70.7715123,-33.3198198,0
+              -70.7758567,-33.2257093,0
+              -70.8216596,-33.2025582,0
+              -70.8647459,-33.2327421,0
+              -70.9144297,-33.2477963,0
+              -70.9280675,-33.3059047,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Ciudad de los Valles</name>
+      <description><![CDATA[description: <br>descripción: <br>tienda: <br>nombre: CIUDAD DE LOS VALLES]]></description>
+      <styleUrl>#poly-424242-2201-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value/>
+        </Data>
+        <Data name="tienda">
+          <value/>
+        </Data>
+        <Data name="nombre">
+          <value>CIUDAD DE LOS VALLES</value>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.8770315,-33.4647938,0
+              -70.8608832,-33.4759302,0
+              -70.8144927,-33.4594579,0
+              -70.8265961,-33.4378476,0
+              -70.8510347,-33.4333997,0
+              -70.879137,-33.4458747,0
+              -70.8770315,-33.4647938,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Militares</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Militares<br>tienda: Militares<br>nombre: ]]></description>
+      <styleUrl>#poly-FF5252-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Militares</value>
+        </Data>
+        <Data name="tienda">
+          <value>Militares</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.556302,-33.443638,0
+              -70.548078,-33.435806,0
+              -70.541399,-33.432513,0
+              -70.51837,-33.429401,0
+              -70.526044,-33.417147,0
+              -70.526145,-33.412718,0
+              -70.538142,-33.40536,0
+              -70.540031,-33.400799,0
+              -70.539975,-33.395031,0
+              -70.538115,-33.39217,0
+              -70.541509,-33.39069,0
+              -70.537634,-33.385631,0
+              -70.534108,-33.383997,0
+              -70.529348,-33.379392,0
+              -70.527579,-33.377401,0
+              -70.52569,-33.376193,0
+              -70.527547,-33.373034,0
+              -70.563277,-33.358157,0
+              -70.583678,-33.362577,0
+              -70.585555,-33.372741,0
+              -70.593989,-33.385959,0
+              -70.600646,-33.389883,0
+              -70.604152,-33.396596,0
+              -70.603898,-33.403161,0
+              -70.607598,-33.415091,0
+              -70.608494,-33.416011,0
+              -70.60657,-33.416172,0
+              -70.602225,-33.417749,0
+              -70.596857,-33.421596,0
+              -70.584283,-33.431619,0
+              -70.577233,-33.431461,0
+              -70.556302,-33.443638,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Cordillera</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Trapenses<br>tienda: Trapenses<br>nombre: ]]></description>
+      <styleUrl>#poly-FF5252-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Trapenses</value>
+        </Data>
+        <Data name="tienda">
+          <value>Trapenses</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.51837,-33.429401,0
+              -70.503756,-33.427438,0
+              -70.455171,-33.373669,0
+              -70.424069,-33.300108,0
+              -70.573769,-33.308863,0
+              -70.583678,-33.362577,0
+              -70.563279,-33.358157,0
+              -70.52754,-33.373039,0
+              -70.52569,-33.376193,0
+              -70.527572,-33.377401,0
+              -70.529355,-33.379398,0
+              -70.534108,-33.384001,0
+              -70.537625,-33.38563,0
+              -70.541504,-33.39069,0
+              -70.538115,-33.39217,0
+              -70.539975,-33.395031,0
+              -70.540031,-33.400803,0
+              -70.538147,-33.405356,0
+              -70.526145,-33.412717,0
+              -70.526044,-33.417145,0
+              -70.51837,-33.429401,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Los Leones</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Los Leones<br>tienda: Los Leones<br>nombre: ]]></description>
+      <styleUrl>#poly-FF5252-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Los Leones</value>
+        </Data>
+        <Data name="tienda">
+          <value>Los Leones</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.592129,-33.486009,0
+              -70.584074,-33.475133,0
+              -70.560974,-33.448087,0
+              -70.556302,-33.443638,0
+              -70.577234,-33.431461,0
+              -70.584283,-33.431619,0
+              -70.596874,-33.421584,0
+              -70.602225,-33.417748,0
+              -70.606569,-33.416172,0
+              -70.608494,-33.416011,0
+              -70.612978,-33.420614,0
+              -70.621492,-33.423445,0
+              -70.625237,-33.430237,0
+              -70.627841,-33.43302,0
+              -70.634022,-33.435994,0
+              -70.635667,-33.435616,0
+              -70.625828,-33.468975,0
+              -70.625209,-33.469623,0
+              -70.62333,-33.471503,0
+              -70.61036,-33.478898,0
+              -70.592129,-33.486009,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Mirador</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Mirador<br>tienda: Mirador<br>nombre: ]]></description>
+      <styleUrl>#poly-424242-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Mirador</value>
+        </Data>
+        <Data name="tienda">
+          <value>Mirador</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.583704,-33.56906,0
+              -70.584408,-33.565323,0
+              -70.557092,-33.560883,0
+              -70.567961,-33.547616,0
+              -70.550717,-33.547827,0
+              -70.546567,-33.551687,0
+              -70.536548,-33.537161,0
+              -70.530175,-33.528309,0
+              -70.554147,-33.525273,0
+              -70.592129,-33.486009,0
+              -70.61036,-33.478898,0
+              -70.623332,-33.471502,0
+              -70.625209,-33.469623,0
+              -70.627024,-33.471673,0
+              -70.637592,-33.475342,0
+              -70.654637,-33.475744,0
+              -70.681918,-33.532394,0
+              -70.663232,-33.537794,0
+              -70.633799,-33.543105,0
+              -70.615744,-33.541714,0
+              -70.610476,-33.569986,0
+              -70.599183,-33.567187,0
+              -70.592209,-33.570051,0
+              -70.583704,-33.56906,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Consistorial</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Consistorial<br>tienda: Consistorial<br>nombre: ]]></description>
+      <styleUrl>#poly-795548-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Consistorial</value>
+        </Data>
+        <Data name="tienda">
+          <value>Consistorial</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.554147,-33.525273,0
+              -70.530175,-33.528309,0
+              -70.520314,-33.51351,0
+              -70.514548,-33.500606,0
+              -70.513183,-33.482133,0
+              -70.510452,-33.470744,0
+              -70.503811,-33.427431,0
+              -70.541398,-33.432513,0
+              -70.548078,-33.435806,0
+              -70.560974,-33.448087,0
+              -70.584035,-33.475047,0
+              -70.592129,-33.486009,0
+              -70.554147,-33.525273,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Mirador Externo</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Mirador Poniente Externo 1<br>tienda: Mirador Poniente Externo 1<br>nombre: ]]></description>
+      <styleUrl>#poly-FF5252-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Mirador Poniente Externo 1</value>
+        </Data>
+        <Data name="tienda">
+          <value>Mirador Poniente Externo 1</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.693787,-33.380296,0
+              -70.727941,-33.389654,0
+              -70.736425,-33.385995,0
+              -70.732849,-33.372155,0
+              -70.742463,-33.371487,0
+              -70.782512,-33.405383,0
+              -70.785472,-33.435483,0
+              -70.757562,-33.475944,0
+              -70.749192,-33.491012,0
+              -70.741467,-33.484654,0
+              -70.715016,-33.483214,0
+              -70.69948,-33.479876,0
+              -70.699185,-33.479813,0
+              -70.690546,-33.417862,0
+              -70.675267,-33.424664,0
+              -70.678418,-33.418635,0
+              -70.680351,-33.4056,0
+              -70.688695,-33.391737,0
+              -70.693787,-33.380296,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Camino Nos</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Camino Nos<br>tienda: Camino Nos<br>nombre: ]]></description>
+      <styleUrl>#poly-424242-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Camino Nos</value>
+        </Data>
+        <Data name="tienda">
+          <value>Camino Nos</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.712714,-33.574002,0
+              -70.716877,-33.607713,0
+              -70.786754,-33.601788,0
+              -70.812258,-33.636918,0
+              -70.738216,-33.65695,0
+              -70.74369,-33.6692,0
+              -70.719785,-33.665913,0
+              -70.726658,-33.682848,0
+              -70.724614,-33.691984,0
+              -70.716795,-33.683383,0
+              -70.708838,-33.664313,0
+              -70.661773,-33.654675,0
+              -70.659129,-33.647008,0
+              -70.652557,-33.635773,0
+              -70.630106,-33.63466,0
+              -70.626588,-33.618613,0
+              -70.62672,-33.611602,0
+              -70.628273,-33.588663,0
+              -70.663382,-33.585308,0
+              -70.67682,-33.582446,0
+              -70.70083,-33.572952,0
+              -70.712714,-33.574002,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Mirador Centro</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Mirador Centro<br>tienda: Mirador Centro<br>nombre: ]]></description>
+      <styleUrl>#poly-FF5252-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Mirador Centro</value>
+        </Data>
+        <Data name="tienda">
+          <value>Mirador Centro</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.699185,-33.479813,0
+              -70.685863,-33.47695,0
+              -70.685317,-33.479125,0
+              -70.70383,-33.519953,0
+              -70.705591,-33.524248,0
+              -70.70627,-33.531573,0
+              -70.685384,-33.539592,0
+              -70.654637,-33.475744,0
+              -70.637592,-33.475342,0
+              -70.627024,-33.471673,0
+              -70.625209,-33.469623,0
+              -70.625828,-33.468975,0
+              -70.635667,-33.435616,0
+              -70.660768,-33.429849,0
+              -70.675267,-33.424664,0
+              -70.690546,-33.417862,0
+              -70.699185,-33.479813,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Mirador Sur</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Mirador Sur<br>tienda: Mirador Sur<br>nombre: ]]></description>
+      <styleUrl>#poly-424242-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Mirador Sur</value>
+        </Data>
+        <Data name="tienda">
+          <value>Mirador Sur</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.599182,-33.567187,0
+              -70.610476,-33.569986,0
+              -70.606234,-33.602116,0
+              -70.623491,-33.604428,0
+              -70.622716,-33.611845,0
+              -70.626721,-33.611602,0
+              -70.626588,-33.618615,0
+              -70.630105,-33.63466,0
+              -70.62987,-33.640653,0
+              -70.631613,-33.640802,0
+              -70.631581,-33.642701,0
+              -70.660003,-33.649564,0
+              -70.661772,-33.654675,0
+              -70.708839,-33.664313,0
+              -70.716858,-33.683437,0
+              -70.724614,-33.691984,0
+              -70.730217,-33.695266,0
+              -70.763694,-33.705411,0
+              -70.794099,-33.729215,0
+              -70.811386,-33.736352,0
+              -70.813839,-33.750546,0
+              -70.878116,-33.803549,0
+              -70.891436,-33.801366,0
+              -70.90137,-33.802813,0
+              -70.88817,-33.809891,0
+              -70.872432,-33.809693,0
+              -70.828401,-33.831588,0
+              -70.804437,-33.825943,0
+              -70.783028,-33.833116,0
+              -70.762189,-33.811511,0
+              -70.757219,-33.815803,0
+              -70.751665,-33.77237,0
+              -70.737703,-33.774191,0
+              -70.739639,-33.792998,0
+              -70.702303,-33.793194,0
+              -70.703183,-33.798377,0
+              -70.69735,-33.798458,0
+              -70.697254,-33.793588,0
+              -70.691026,-33.793349,0
+              -70.688336,-33.758822,0
+              -70.670747,-33.756443,0
+              -70.657318,-33.743795,0
+              -70.652871,-33.743393,0
+              -70.641512,-33.748426,0
+              -70.632619,-33.747804,0
+              -70.622274,-33.736471,0
+              -70.612272,-33.73774,0
+              -70.616306,-33.722284,0
+              -70.655821,-33.675856,0
+              -70.633939,-33.652835,0
+              -70.630028,-33.642042,0
+              -70.621276,-33.643098,0
+              -70.61243,-33.641163,0
+              -70.598153,-33.639791,0
+              -70.581472,-33.63428,0
+              -70.576883,-33.627373,0
+              -70.567263,-33.62458,0
+              -70.565895,-33.620563,0
+              -70.557339,-33.620774,0
+              -70.545596,-33.617804,0
+              -70.539873,-33.620258,0
+              -70.530195,-33.61554,0
+              -70.520133,-33.615981,0
+              -70.500628,-33.608631,0
+              -70.501347,-33.602695,0
+              -70.495864,-33.599819,0
+              -70.49904,-33.572018,0
+              -70.484495,-33.553266,0
+              -70.487054,-33.543258,0
+              -70.498038,-33.543125,0
+              -70.506077,-33.545955,0
+              -70.516956,-33.541937,0
+              -70.531563,-33.544449,0
+              -70.546567,-33.551687,0
+              -70.550718,-33.547827,0
+              -70.567961,-33.547616,0
+              -70.557092,-33.560883,0
+              -70.584408,-33.565323,0
+              -70.583704,-33.56906,0
+              -70.592209,-33.570051,0
+              -70.599182,-33.567187,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Mirador Norte</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Mirador Norte<br>tienda: Mirador Norte<br>nombre: ]]></description>
+      <styleUrl>#poly-FF5252-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Mirador Norte</value>
+        </Data>
+        <Data name="tienda">
+          <value>Mirador Norte</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.714715,-33.334053,0
+              -70.690593,-33.326443,0
+              -70.639138,-33.349274,0
+              -70.617523,-33.364407,0
+              -70.616369,-33.368204,0
+              -70.603092,-33.374229,0
+              -70.604246,-33.382842,0
+              -70.600646,-33.389883,0
+              -70.59399,-33.385959,0
+              -70.585555,-33.372742,0
+              -70.573768,-33.308863,0
+              -70.644227,-33.177659,0
+              -70.656683,-33.172091,0
+              -70.713235,-33.178292,0
+              -70.742393,-33.213696,0
+              -70.756633,-33.24039,0
+              -70.733004,-33.293078,0
+              -70.774645,-33.328437,0
+              -70.777055,-33.337834,0
+              -70.736619,-33.328437,0
+              -70.728339,-33.33835,0
+              -70.714715,-33.334053,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Huechuraba</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Huechuraba<br>tienda: Huechuraba<br>nombre: ]]></description>
+      <styleUrl>#poly-FF5252-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Huechuraba</value>
+        </Data>
+        <Data name="tienda">
+          <value>Huechuraba</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.728348,-33.338353,0
+              -70.729238,-33.35698,0
+              -70.73007,-33.365746,0
+              -70.732503,-33.370022,0
+              -70.732711,-33.371622,0
+              -70.736425,-33.385995,0
+              -70.727941,-33.389654,0
+              -70.693787,-33.380296,0
+              -70.688692,-33.391747,0
+              -70.680351,-33.4056,0
+              -70.678418,-33.418635,0
+              -70.675267,-33.424664,0
+              -70.660768,-33.429848,0
+              -70.634022,-33.435994,0
+              -70.627841,-33.43302,0
+              -70.625237,-33.430237,0
+              -70.621492,-33.423445,0
+              -70.612977,-33.420614,0
+              -70.607598,-33.415091,0
+              -70.603898,-33.403161,0
+              -70.604152,-33.396595,0
+              -70.600646,-33.389883,0
+              -70.604246,-33.382842,0
+              -70.603092,-33.374229,0
+              -70.616369,-33.368203,0
+              -70.617524,-33.364407,0
+              -70.639142,-33.34927,0
+              -70.690593,-33.326443,0
+              -70.728348,-33.338353,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Talagante</name>
+      <description><![CDATA[description: <br>descripción: <br>tienda: <br>nombre: ]]></description>
+      <styleUrl>#poly-E65100-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value/>
+        </Data>
+        <Data name="tienda">
+          <value/>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.962766,-33.678365,0
+              -70.951351,-33.690221,0
+              -70.916504,-33.671937,0
+              -70.893843,-33.651433,0
+              -70.897621,-33.647504,0
+              -70.920967,-33.648218,0
+              -70.931051,-33.651505,0
+              -70.935644,-33.663079,0
+              -70.962766,-33.678365,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>AYSEN</name>
+      <description><![CDATA[description: <br>descripción: <br>tienda: <br>nombre: ]]></description>
+      <styleUrl>#poly-A52714-1200-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value/>
+        </Data>
+        <Data name="tienda">
+          <value/>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -72.6842689,-45.4239558,0
+              -72.6688812,-45.4132898,0
+              -72.6682606,-45.3961155,0
+              -72.6771442,-45.3881904,0
+              -72.6873993,-45.38581,0
+              -72.7153289,-45.3907288,0
+              -72.7166102,-45.404138,0
+              -72.7044994,-45.4146543,0
+              -72.6842689,-45.4239558,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Consistorial</name>
+      <description><![CDATA[description: <br>descripción: <br>tienda: <br>nombre: ]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value/>
+        </Data>
+        <Data name="tienda">
+          <value/>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -70.5479027,-33.4838093,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Polígono 25</name>
+      <description><![CDATA[description: <br>descripción: <br>tienda: <br>nombre: ]]></description>
+      <styleUrl>#poly-000000-1200-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value/>
+        </Data>
+        <Data name="tienda">
+          <value/>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.5773136,-33.3891793,0
+              -70.5886432,-33.4083833,0
+              -70.5625507,-33.4175538,0
+              -70.551221,-33.3986385,0
+              -70.5773136,-33.3891793,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Silva Carvallo</name>
+      <description><![CDATA[description: <br>descripción: description: <br>tienda: Silva Carvallo<br>tienda: Silva Carvallo<br>nombre: ]]></description>
+      <styleUrl>#poly-424242-2000-77</styleUrl>
+      <ExtendedData>
+        <Data name="description">
+          <value/>
+        </Data>
+        <Data name="descripción">
+          <value>description: 
+tienda: Silva Carvallo</value>
+        </Data>
+        <Data name="tienda">
+          <value>Silva Carvallo</value>
+        </Data>
+        <Data name="nombre">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -70.797944,-33.501462,0
+              -70.799211,-33.504733,0
+              -70.799115,-33.528338,0
+              -70.804148,-33.542801,0
+              -70.810504,-33.551282,0
+              -70.824995,-33.557919,0
+              -70.8305958,-33.5592241,0
+              -70.8345335,-33.5602702,0
+              -70.8248667,-33.5686828,0
+              -70.818472,-33.571507,0
+              -70.806041,-33.588946,0
+              -70.781396,-33.591206,0
+              -70.773211,-33.57872,0
+              -70.718259,-33.514205,0
+              -70.70383,-33.519953,0
+              -70.685317,-33.479125,0
+              -70.685863,-33.47695,0
+              -70.715016,-33.483214,0
+              -70.741467,-33.484654,0
+              -70.749192,-33.491012,0
+              -70.757562,-33.475944,0
+              -70.785329,-33.490299,0
+              -70.783533,-33.49709,0
+              -70.795067,-33.499782,0
+              -70.797944,-33.501462,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>
