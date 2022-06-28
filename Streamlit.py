@@ -1,9 +1,7 @@
 import altair as alt
 import pandas as pd
 import streamlit as st
-import geopandas
 import numpy as np
-from geopy.geocoders import Nominatim 
 import requests # library to handle requests
 import folium # map rendering library
 from streamlit_folium import folium_static 
