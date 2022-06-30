@@ -807,9 +807,9 @@ def run_UI():
         
         col1, col2, col3, col4= st.columns(4)
         col1.metric("Ticket Promedio", "$45.459")
-        col2.metric("% Costo de la Venta", "24,7%")
-        col3.metric("Ordenes MFC", "646")
-        col4.metric("Utilización MFC", "99%")
+        col2.metric("% Costo de la Venta", "25,3%")
+        col3.metric("Ordenes MFC", "624")
+        col4.metric("Utilización MFC", "96%")
 
 
 
