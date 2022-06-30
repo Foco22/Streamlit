@@ -62,7 +62,7 @@ def run_UI():
             
 
         """)
-        st.header("Costo Operacion Logistica Mayo  ", )
+        st.header("Costo Operación Logística Mayo  ", )
 
         
         original_title = '<p style="color:Black; font-size: 20px;">KPIs</p>'
@@ -282,19 +282,19 @@ def run_UI():
             st.write("""**Costo x Orden:** 41%""")
 
 
-
     if page == 'MFC 100% : 650 Pedidos Diarios':
         st.sidebar.write("""
-            ### Consideración MFC 100%
-            
-            **1.Transporte Ineficiente**: MFC es ineficiente en zonas lejanas por costos de transporte.
+           ### Consideraciones MFC 100%
+          
+           **1.Transporte Ineficiente:** MFC es ineficiente en zonas lejanas por costos de transporte.
+ 
+           **2.Riesgo Operacional:** Riesgo operacional bastante alto, ya que hay una alta dependencia del MFC por ser el único punto de preparación de pedidos.
+ 
+           **3.Mercado On-demand:** Se pierde competitividad en mercado On-demand, toda nuestra demanda sería programada.
+ 
+           **4-Inflexibilidad Promocional:** El modelo no tiene holguras en periodos promocionales (high and low).  
+        """)       
 
-            **2.Riesgo Operacional:** Riesgo operacional bastante alto, ya que hay una alta dependencia del MFC por ser el unico punto de preparacíon de pedidos.
-
-            **3.Mercado On-demand:** Se pierde competitividad en mercado On-demand, toda nuestra demanda seria programada.
-
-            **4-Inflexibilidad Promocional:** Modelo no tiene holguras a periodos promocionales (high and low).   
-        """)
         st.header("Demanda de 100% MFC: 650 Pedidos ", )
 
         
@@ -419,24 +419,25 @@ def run_UI():
 
     elif page == 'MFC 1000 Pedidos: Ruta Mirador':
         st.sidebar.write("""
-            ### Consideración MFC 1000 Pedidos: Ruta Mirador
-
-            **1.Zonas Cercanas:** MFC prioriza zonas cercana de influencia
-
-            **2.On-Demand:** Tiendas del Sector oriente, destinadas exclusivamente a mercado on-demand (militares, leones, hechuraba)
-            
-            **3.Comunas relevantes:** Silva Carvallo, Mirador y Consistorial se abren para abastecer comunas importantes, tales como La Florida, Maipu y Peñalolen.
-            
-            **4.Modelo Hibrido:** Modelo Hibrido permite plan de contigencia de manera natural.
-            
-            **5.MultiPoligonos:** Se debe evaluar funcionalidad sistemica, para hacer competir poligonos on-demand y programados.
-            
-            **6.Rutas Mirador:** Puente alto, Buin, Santiago Centro, Cerro Navia son abatecidas por rutas de mirador
-            
-            **7.Utilizacion MFC**: Baja utilizacion del MFC por apertura de tienda, pero holgura en Red Friday y promociones. """)
+           ### Consideraciones MFC 1000 Pedidos: Ruta Mirador
+ 
+           **1.Zonas Cercanas:** MFC prioriza zonas cercana de influencia
+ 
+           **2.On-Demand:** Tiendas del Sector oriente, destinadas exclusivamente a mercado on-demand (militares, leones, huechuraba)
+          
+           **3.Comunas relevantes:** Silva Carvallo, Mirador y Consistorial se abren para abastecer comunas importantes, tales como: La Florida, Maipú y Peñalolén.
+          
+           **4.Modelo Híbrido:** El modelo Híbrido permite plan de contingencia de manera natural.
+          
+           **5.Multi Polígonos:** Se debe evaluar funcionalidad sistémica, para hacer competir polígonos on-demand y programados.
+          
+           **6.Rutas Mirador:** Puente alto, Buin, Santiago Centro, Cerro Navia son abastecidas por rutas de mirador
+          
+           **7.Utilización MFC**: Baja utilización del MFC por apertura de tienda, pero holgura en Red Fridays y promociones. """)
         st.header("MFC 1000 Pedidos: Ruta Mirador")
-        
-        #st.header("Demanda de 100% MFC: 650 Pedidos ", )
+      
+  
+    #st.header("Demanda de 100% MFC: 650 Pedidos ", )
 
         original_title = '<p style="color:Black; font-size: 20px;">KPIs</p>'
         st.markdown(original_title, unsafe_allow_html=True)
@@ -620,7 +621,7 @@ def run_UI():
 
     elif page == 'MFC 1000 Pedidos: Hub & Spoke':
         st.sidebar.write("""
-            ### Consideración MFC 1000:  Hub & Spoke """)
+            ### Consideraciones MFC 1000:  Hub & Spoke """)
         st.header("MFC 1000 Pedidos: Hub & Spoke")
         
 
@@ -787,9 +788,9 @@ def run_UI():
             st.write("""**Pedidos:** 201 O/D (21%)""")
             st.write("""**Modelo:** MFC Hub & Spoke""")
             st.write("""**Costo Picking:** 3.530""")
-            st.write("""**Costo Camion:** 2.380""")
-            st.write("""**Costo Desconcilizacion:** 1.580""")
-            st.write("""**Costo Ultima Milla:** 5.550""")
+            st.write("""**Costo Camión:** 2.380""")
+            st.write("""**Costo Desconsolidación:** 1.580""")
+            st.write("""**Costo última Milla:** 5.550""")
             st.write("""**Costo Total:** 12.880""")
             st.write("""**Costo x Orden:** 28%""")
             st.write("""**Costo Actual:** 34%""")
@@ -804,14 +805,13 @@ def run_UI():
 
         
 
-
+ 
     if page == 'MFC 2000 Pedidos':
         st.sidebar.write("""
-            ### Consideración MFC con 2000 pedidos
-             **1.MF2 o Apertura de Tiendas**: En base a esta demanda, la cantidad de tiendas actuales no dan abastado operacionalmente para cumplir con la demanda
-             por lo que, se requiere abrir más tiendas o otro MFC""")
+           ### Consideraciones MFC con 2000 pedidos
+            **1.MF2 o Apertura de Tiendas**: En base a esta demanda, la cantidad de tiendas actuales no dan abasto operacionalmente para cumplir con la demanda, por lo que, se requiere abrir más tiendas o otro MFC""")
         st.header("MFC 2000 Pedidos: MFC2 o nuevas tiendas")
-        
+
 
         original_title = '<p style="color:Black; font-size: 20px;">KPIs</p>'
         st.markdown(original_title, unsafe_allow_html=True)
