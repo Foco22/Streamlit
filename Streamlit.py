@@ -315,7 +315,7 @@ def run_UI():
         st.markdown(original_title, unsafe_allow_html=True)
 
         tooltip = "MFC"
-        folium.Marker([-33.35674849571172, -70.54006548079522], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby)
+        folium.Marker([-33.3512146544498, -70.47307462804237], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip,icon=folium.Icon(color='red')).add_to(map_sby)
 
         ### Anillo 1 
         data_geo = json.load(open('Unimarc.geojson'))
