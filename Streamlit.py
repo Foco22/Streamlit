@@ -9,7 +9,7 @@ import json
 
 
 
-PAGES = [
+PAGES = ['Sin MFC: Costo Mayo',
     'MFC 100% : 650 Pedidos Diarios',
     'MFC 1000 Pedidos: Ruta Mirador',
     'MFC 1000 Pedidos: Hub & Spoke',
@@ -55,6 +55,212 @@ def run_UI():
     
     st.experimental_set_query_params(page=page)
 
+
+    if page == 'Sin MFC: Costo Mayo':
+        st.sidebar.write("""
+            ### Costo Mayo
+            
+
+        """)
+        st.header("Costo Operacion Logistica Mayo  ", )
+
+        
+        original_title = '<p style="color:Black; font-size: 20px;">KPIs</p>'
+        st.markdown(original_title, unsafe_allow_html=True)
+        
+        col1, col2, col3= st.columns(3)
+        col1.metric("Ticket Promedio", "$45.459")
+        col2.metric("% Costo de la Venta", "30%", )
+        col3.metric("Ordenes", "280")
+
+
+
+        map_sby = folium.Map(location=[-33.439445474052995, -70.65461676222148], zoom_start=10)
+        data_geo = json.load(open('Unimarc.geojson'))
+
+        original_title = '<p style="color:Black; font-size: 20px;">Mapa de Santiago</p>'
+        st.markdown(original_title, unsafe_allow_html=True)
+
+        tooltip = "MFC"
+        folium.Marker([-33.35674849571172, -70.54006548079522], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby)
+
+        ### Anillo 1 
+        data_geo = json.load(open('Unimarc.geojson'))
+        features = []
+        for x in data_geo['features']:
+            if x['properties']['name'] in  ('Militares','Cordillera'):
+                features.append(x)
+    
+        gson_anillo_1 = {'type':'FeatureCollection','features':features}
+        maps= folium.Choropleth(geo_data = gson_anillo_1,
+                           fill_color='green',
+                           highlight=True,
+                           reset=True).add_to(map_sby)
+
+        ### Anillo 2
+        data_geo = json.load(open('Unimarc.geojson'))
+        features = []
+        for x in data_geo['features']:
+            if x['properties']['name'] in  ('Consistorial'):
+                features.append(x)
+    
+        gson_anillo_2 = {'type':'FeatureCollection','features':features}
+        maps= folium.Choropleth(geo_data = gson_anillo_2,
+                           fill_color='blue',
+                           highlight=True,
+                           reset=True).add_to(map_sby)
+        
+        ### Anillo 2
+        data_geo = json.load(open('Unimarc.geojson'))
+        features = []
+        for x in data_geo['features']:
+            if x['properties']['name'] in  ('Huechuraba'):
+                features.append(x)
+    
+        gson_anillo_2 = {'type':'FeatureCollection','features':features}
+        maps= folium.Choropleth(geo_data = gson_anillo_2,
+                           fill_color='red',
+                           highlight=True,
+                           reset=True).add_to(map_sby)
+        
+        ### Anillo 2
+        data_geo = json.load(open('Unimarc.geojson'))
+        features = []
+        for x in data_geo['features']:
+            if x['properties']['name'] in  ('Los Leones'):
+                features.append(x)
+    
+        gson_anillo_2 = {'type':'FeatureCollection','features':features}
+        maps= folium.Choropleth(geo_data = gson_anillo_2,
+                           fill_color='orange',
+                           highlight=True,
+                           reset=True).add_to(map_sby)
+
+        ### Anillo 3
+        data_geo = json.load(open('Unimarc.geojson'))
+        features = []
+        for x in data_geo['features']:
+            if x['properties']['name'] in  ('Mirador Externo','Mirador Centro','Mirador Norte','Mirador Sur'):
+                features.append(x)
+    
+        gson_anillo_3 = {'type':'FeatureCollection','features':features}
+        maps= folium.Choropleth(geo_data = gson_anillo_3,
+                           fill_color='black',
+                           highlight=True,
+                           reset=True).add_to(map_sby)
+
+
+        ### Anillo 4
+        data_geo = json.load(open('Unimarc.geojson'))
+        features = []
+        for x in data_geo['features']:
+            if x['properties']['name'] in  ('Camino Nos'):
+                features.append(x)
+    
+        gson_anillo_4 = {'type':'FeatureCollection','features':features}
+        maps= folium.Choropleth(geo_data = gson_anillo_4,
+                           fill_color='purple',
+                           highlight=True,
+                           reset=True).add_to(map_sby)
+        
+        ### Anillo 4
+        data_geo = json.load(open('Unimarc.geojson'))
+        features = []
+        for x in data_geo['features']:
+            if x['properties']['name'] in  ('Silva Carvallo'):
+                features.append(x)
+    
+        gson_anillo_4 = {'type':'FeatureCollection','features':features}
+        maps= folium.Choropleth(geo_data = gson_anillo_4,
+                           fill_color='pink',
+                           highlight=True,
+                           reset=True).add_to(map_sby)
+
+        ### Anillo 4
+        data_geo = json.load(open('Unimarc.geojson'))
+        features = []
+        for x in data_geo['features']:
+            if x['properties']['name'] in  ('Mirador'):
+                features.append(x)
+    
+        gson_anillo_4 = {'type':'FeatureCollection','features':features}
+        maps= folium.Choropleth(geo_data = gson_anillo_4,
+                           fill_color='yellow',
+                           highlight=True,
+                           reset=True).add_to(map_sby)
+
+        folium_static(map_sby)
+
+        col1, col2, col3, col4 = st.columns((1, 1, 1,1))
+        with col1:
+            original_title = '<p style="color:Green; font-weight: bold; font-size: 25px;">Militares & Cordillera </p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 51 O/D (18%)
+                        **Modelo:** Shoppers""")
+            st.write("""**Costo:** 15.786""")
+            st.write("""**Costo x Orden:** 34%""")
+            
+
+        with col2:
+            original_title = '<p style="color:Blue; font-weight: bold; font-size: 25px;">Consistorial</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 16 O/D (6%)
+                        **Modelo:** Shoppers""")
+            st.write("""**Costo:** 9.782""")
+            st.write("""**Costo x Orden:** 22%""")
+            
+
+        with col3:
+            original_title = '<p style="color:orange; font-weight: bold; font-size: 25px;">Leones</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 42 O/D (15%)
+                        **Modelo:** Shoppers""")
+            st.write("""**Costo:** 13.274""")
+            st.write("""**Costo x Orden:** 29%""")
+ 
+
+        with col4:
+            original_title = '<p style="color:red; font-weight: bold; font-size: 25px;">Huechuraba</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 18 O/D (6%)
+                        **Modelo:** Shoppers""")
+            st.write("""**Costo:** 20.961""")
+            st.write("""**Costo x Orden:** 46%""")
+            
+        with col1:
+            original_title = '<p style="color:black; font-weight: bold; font-size: 25px;">Ruta Mirador</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 54 O/D (19%)
+                        **Modelo:** Rutas """)
+            st.write("""**Costo:** 16.326""")
+            st.write("""**Costo x Orden:** 36%""")
+        
+        with col2:
+            original_title = '<p style="color:yellow; font-weight: bold; font-size: 25px;">Mirador</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 60 O/D (22%)
+                        **Modelo:** Directo""")
+            st.write("""**Delivery:** 8.723""")
+            st.write("""**Costo x Orden:** 19%""")
+     
+        with col3:
+            original_title = '<p style="color:pink; font-weight: bold; font-size: 25px;">Silva Carvallo</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 31 O/D (15%)
+                        **Modelo:** Directo""")
+            st.write("""**Delivery:** 12.786""")
+            st.write("""**Costo x Orden:** 28%""")
+            
+        with col4:
+            original_title = '<p style="color:purple; font-weight: bold; font-size: 25px;">Camino Nos</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 8 O/D (3%)
+                        **Modelo:** Directo""")
+            st.write("""**Delivery:** 18.458""")
+            st.write("""**Costo x Orden:** 41%""")
+
+
+
     if page == 'MFC 100% : 650 Pedidos Diarios':
         st.sidebar.write("""
             ### Consideración MFC 100%
@@ -75,7 +281,7 @@ def run_UI():
         
         col1, col2, col3= st.columns(3)
         col1.metric("Ticket Promedio", "$45.459")
-        col2.metric("% Costo de la Venta", "32%", '-29%')
+        col2.metric("% Costo de la Venta", "32%", '-30%')
         col3.metric("Ordenes", "650")
 
 
@@ -153,7 +359,7 @@ def run_UI():
             st.write("""**Delivery:** 5.750            
                         **Picking:** 3.530""")
             st.write("""**Costo x Orden:** 20%
-                        **Costo Actual:** 33%""")
+                        **Costo Actual:** 34%""")
             
 
         with col2:
@@ -174,7 +380,7 @@ def run_UI():
                         **Modelo:** Directo""")
             st.write("""**Delivery:** 10.990            
                         **Picking:** 3.530""")
-            st.write("""**Costo x Orden:** 34%
+            st.write("""**Costo x Orden:** 32%
                         **Costo Actual:** 26%""")
 
 
@@ -215,9 +421,9 @@ def run_UI():
         
         col1, col2, col3, col4= st.columns(4)
         col1.metric("Ticket Promedio", "$45.459")
-        col2.metric("% Costo de la Venta", "24,6%")
-        col3.metric("Ordenes MFC", "391")
-        col4.metric("Utilización MFC", "60%")
+        col2.metric("% Costo de la Venta", "25,1%")
+        col3.metric("Ordenes MFC", "370")
+        col4.metric("Utilización MFC", "56%")
 
 
 
@@ -227,9 +433,12 @@ def run_UI():
         original_title = '<p style="color:Black; font-size: 20px;">Mapa de Santiago</p>'
         st.markdown(original_title, unsafe_allow_html=True)
 
+        #tooltip = "MFC"
+        #folium.Marker([-33.35674849571172, -70.54006548079522], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby_2)
+
         tooltip = "MFC"
-        folium.Marker([-33.35674849571172, -70.54006548079522], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby_2)
-        
+        folium.Marker([-33.35674849571172, -70.54006548079522], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_2)
+
 
         tooltip = "Militares"
         folium.Marker([-33.403718655851755, -70.5685695153448], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_2)
@@ -324,25 +533,65 @@ def run_UI():
 
         folium_static(map_sby_2)
 
+        #df = pd.DataFrame(
+        #[['Anillo Verde',1,1,1],['Verde',1,1,1]],index=pd.Index([1, 2]))
 
-        col1, col2 = st.columns((1, 1))
+        #st.dataframe(df)
 
+        col1, col2, col3, col4 = st.columns((1, 1, 1,1))
+
+        #Verde
         with col1:
+            original_title = '<p style="color:green; font-weight: bold; font-size: 25px;">Anillo Verde</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 163 O/D  (16%)""")
+            st.write("""**Modelo:** MFC""")
+            st.write("""**Costo:** 9.280""")
+            st.write("""**Costo x Orden:** 20%""")
+
+        #Azul
+        with col2:
+            original_title = '<p style="color:blue; font-weight: bold; font-size: 25px;">Anillo Azul</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 194 O/D  (19%)""")
+            st.write("""**Modelo:** MFC""")
+            st.write("""**Costo:** 11.020""")
+            st.write("""**Costo x Orden:** 24%""")
+
+        #Rojo
+        with col3:
+            original_title = '<p style="color:red; font-weight: bold; font-size: 25px;">Anillo Rojo</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 12 O/D  (1%)""")
+            st.write("""**Modelo:** MFC""")
+            st.write("""**Costo:** 14.520""")
+            st.write("""**Costo x Orden:** 32%""")
+
+        #On demand
+        with col4:
             original_title = '<p style="color:pink; font-weight: bold; font-size: 25px;">On-Demand</p>'
             st.markdown(original_title, unsafe_allow_html=True)
-            st.write("""**Pedidos:** 100 O/D  (10%)""")
+            st.write("""**Pedidos:** 129 O/D  (13%)""")
             st.write("""**Modelo:** Shopper""")
-            st.write("""**Costo:** 9.286""")
-            st.write("""**Costo x Orden:** 21%""")
+            st.write("""**Costo:** 11.318""")
+            st.write("""**Costo x Orden:** 24%""")
             
 
-        with col2:
+        with col1:
             original_title = '<p style="color:purple; font-weight: bold; font-size: 25px;">Ruta Mirador</p>'
             st.markdown(original_title, unsafe_allow_html=True)
-            st.write("""**Pedidos:** 197 O/D (21%)""")
+            st.write("""**Pedidos:** 201 O/D (21%)""")
             st.write("""**Modelo:** Picking & Ruta Mirador""")
             st.write("""**Costo:** 15.582""")
             st.write("""**Costo x Orden:** 34%""")
+        
+        with col2:
+            original_title = '<p style="color:grey; font-weight: bold; font-size: 25px;">Shoppers</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 301 O/D (30%)""")
+            st.write("""**Modelo:** Shoppers Silva y Mirador""")
+            st.write("""**Costo:** 10.038""")
+            st.write("""**Costo x Orden:** 22%""")
 
 
     elif page == 'MFC 1000 Pedidos: Hub & Spoke':
@@ -356,9 +605,9 @@ def run_UI():
         
         col1, col2, col3, col4= st.columns(4)
         col1.metric("Ticket Promedio", "$45.459")
-        col2.metric("% Costo de la Venta", "23,3%")
-        col3.metric("Ordenes MFC", "585")
-        col4.metric("Utilización MFC", "90%")
+        col2.metric("% Costo de la Venta", "24%")
+        col3.metric("Ordenes MFC", "564")
+        col4.metric("Utilización MFC", "86%")
 
 
 
@@ -369,8 +618,8 @@ def run_UI():
         st.markdown(original_title, unsafe_allow_html=True)
 
         tooltip = "MFC"
-        folium.Marker([-33.35674849571172, -70.54006548079522], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby_3)
-        
+        folium.Marker([-33.35674849571172, -70.54006548079522], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_3)
+ 
 
         tooltip = "Militares"
         folium.Marker([-33.403718655851755, -70.5685695153448], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_3)
@@ -467,29 +716,65 @@ def run_UI():
         folium_static(map_sby_3)
 
 
-        col1, col2 = st.columns((1,1))
+        col1, col2, col3,col4 = st.columns((1,1,1,1))
 
+        #Verde
         with col1:
+            original_title = '<p style="color:green; font-weight: bold; font-size: 25px;">Anillo Verde</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 163 O/D  (16%)""")
+            st.write("""**Modelo:** MFC""")
+            st.write("""**Costo:** 9.280""")
+            st.write("""**Costo x Orden:** 20%""")
+
+        #Azul
+        with col2:
+            original_title = '<p style="color:blue; font-weight: bold; font-size: 25px;">Anillo Azul</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 194 O/D  (19%)""")
+            st.write("""**Modelo:** MFC""")
+            st.write("""**Costo:** 11.020""")
+            st.write("""**Costo x Orden:** 24%""")
+
+        #Rojo
+        with col3:
+            original_title = '<p style="color:red; font-weight: bold; font-size: 25px;">Anillo Rojo</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 12 O/D  (1%)""")
+            st.write("""**Modelo:** MFC""")
+            st.write("""**Costo:** 14.520""")
+            st.write("""**Costo x Orden:** 32%""")
+
+        #On demand
+        with col4:
             original_title = '<p style="color:pink; font-weight: bold; font-size: 25px;">On-Demand</p>'
             st.markdown(original_title, unsafe_allow_html=True)
-            st.write("""**Pedidos:** 100 O/D  (10%)""")
+            st.write("""**Pedidos:** 129 O/D  (13%)""")
             st.write("""**Modelo:** Shopper""")
-            st.write("""**Costo:** 9.286""")
-            st.write("""**Costo x Orden:** 21%""")
+            st.write("""**Costo:** 11.318""")
+            st.write("""**Costo x Orden:** 24%""")
 
-        with col2:
+        with col1:
             original_title = '<p style="color:purple; font-weight: bold; font-size: 25px;">Hub & Spoke </p>'
             st.markdown(original_title, unsafe_allow_html=True)
-            st.write("""**Pedidos:** 197 O/D (21%)""")
+            st.write("""**Pedidos:** 201 O/D (21%)""")
             st.write("""**Modelo:** MFC Hub & Spoke""")
             st.write("""**Costo:** 12.880""")
             st.write("""**Costo x Orden:** 28%""")
             st.write("""**Costo Actual:** 34%""")
 
+        with col2:
+            original_title = '<p style="color:grey; font-weight: bold; font-size: 25px;">Shoppers</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 301 O/D (30%)""")
+            st.write("""**Modelo:** Shoppers Silva y Mirador""")
+            st.write("""**Costo:** 10.038""")
+            st.write("""**Costo x Orden:** 22%""")
+
         
 
 
-    else:
+    if page == 'MFC 2000 Pedidos':
         st.sidebar.write("""
             ### Consideración MFC con 2000 pedidos""")
         st.header("MFC 2000 Pedidos: MFC2 o nuevas tiendas")
@@ -513,8 +798,8 @@ def run_UI():
         st.markdown(original_title, unsafe_allow_html=True)
 
         tooltip = "MFC"
-        folium.Marker([-33.35674849571172, -70.54006548079522], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby_4)
-        
+        folium.Marker([-33.35674849571172, -70.54006548079522], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_4)
+      
 
         tooltip = "Militares"
         folium.Marker([-33.403718655851755, -70.5685695153448], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_4)
@@ -606,35 +891,60 @@ def run_UI():
 
         folium_static(map_sby_4)
 
+        col1, col2, col3,col4 = st.columns((1,1,1,1))
 
-        col1, col2,col3 = st.columns((1,1,1))
+        #Verde
+        with col1:
+            original_title = '<p style="color:green; font-weight: bold; font-size: 25px;">Anillo Verde</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 300 O/D  (15%)""")
+            st.write("""**Modelo:** MFC""")
+            st.write("""**Costo:** 9.280""")
+            st.write("""**Costo x Orden:** 20%""")
+
+        #Azul
+        with col2:
+            original_title = '<p style="color:blue; font-weight: bold; font-size: 25px;">Anillo Azul</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 300 O/D  (15%)""")
+            st.write("""**Modelo:** MFC""")
+            st.write("""**Costo:** 11.020""")
+            st.write("""**Costo x Orden:** 24%""")
+
+        #Rojo
+        with col3:
+            original_title = '<p style="color:red; font-weight: bold; font-size: 25px;">Anillo Rojo</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 24 O/D  (1%)""")
+            st.write("""**Modelo:** MFC""")
+            st.write("""**Costo:** 14.520""")
+            st.write("""**Costo x Orden:** 32%""")
+
+        #On demand
+        with col4:
+            original_title = '<p style="color:pink; font-weight: bold; font-size: 25px;">On-Demand</p>'
+            st.markdown(original_title, unsafe_allow_html=True)
+            st.write("""**Pedidos:** 260 O/D  (13%)""")
+            st.write("""**Modelo:** Shopper""")
+            st.write("""**Costo:** 12.050""")
+            st.write("""**Costo x Orden:** 27%""")
 
         with col1:
-            original_title = '<p style=" font-weight: bold; font-size: 25px;">MFC </p>'
+            original_title = '<p style="color:purple; font-weight: bold; font-size: 25px;">Ruta Mirador </p>'
             st.markdown(original_title, unsafe_allow_html=True)
-            st.write("""**Pedidos:** 646 O/D (32%)""")
-            st.write("""**Modelo:** MFC """)
-            st.write("""**Costo:** 9.643""")
-            st.write("""**Costo x Orden:** 21%""")
+            st.write("""**Pedidos:** 393 O/D (19%)""")
+            st.write("""**Modelo:** Picking & Ruta Mirador""")
+            st.write("""**Costo:** 12.880""")
+            st.write("""**Costo x Orden:** 28%""")
+            st.write("""**Costo Actual:** 34%""")
+
         with col2:
-            original_title = '<p style=" font-weight: bold; font-size: 25px;">Shoppers Tiendas (A) </p>'
+            original_title = '<p style="color:grey; font-weight: bold; font-size: 25px;">Shoppers</p>'
             st.markdown(original_title, unsafe_allow_html=True)
-            st.write("""**Pedidos:** 721 O/D (36%)""")
-            st.write("""**Modelo:** Shoppers """)
-            st.write("""**Costo:** 9.996""")
+            st.write("""**Pedidos:** 723 O/D (36%)""")
+            st.write("""**Modelo:** Shoppers Silva, Mirador y Consistorial""")
+            st.write("""**Costo:** 9.995""")
             st.write("""**Costo x Orden:** 22%""")
-        
-        with col3:
-            original_title = '<p style=" font-weight: bold; font-size: 25px;">Denanda Por Poligono </p>'
-            st.markdown(original_title, unsafe_allow_html=True)
-            st.write("""**Leones:** 300""")
-            st.write("""**Silva Carvallo:** 194""")
-            st.write("""**Militares:** 422""")
-            st.write("""**Mirador:** 407""")
-            st.write("""**Mirador Rutas:** 393""")
-            st.write("""**Mirador Norte:** 24""")
-            st.write("""**Huechuraba:** 140""")
-            st.write("""**Consistorial:** 120""")
 
  
 run_UI()
