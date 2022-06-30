@@ -81,8 +81,30 @@ def run_UI():
         original_title = '<p style="color:Black; font-size: 20px;">Mapa de Santiago</p>'
         st.markdown(original_title, unsafe_allow_html=True)
 
-        tooltip = "MFC"
-        folium.Marker([-33.35674849571172, -70.54006548079522], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby)
+        
+        tooltip = "Militares"
+        folium.Marker([-33.403718655851755, -70.5685695153448], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby)
+
+
+        tooltip = "Huechuraba"
+        folium.Marker([-33.35042848321098, -70.67137054603444], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip ).add_to(map_sby)
+
+
+        tooltip = "Leones"
+        folium.Marker([-33.44840022101449, -70.59814800205135], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby)
+
+        tooltip = "Mirador"
+        folium.Marker([-33.51373958190215, -70.60675680261642], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby)
+
+        tooltip = "Silva Carvallo"
+        folium.Marker([-33.532231859430375, -70.77482864554192], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby)
+
+        tooltip = "Consistorial"
+        folium.Marker([-33.48375561020082, -70.54773803862076], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby)
+
+        tooltip = "Camino Nos"
+        folium.Marker([-33.63945763486492, -70.70308536137924], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby)
+
 
         ### Anillo 1 
         data_geo = json.load(open('Unimarc.geojson'))
@@ -239,24 +261,24 @@ def run_UI():
             original_title = '<p style="color:yellow; font-weight: bold; font-size: 25px;">Mirador</p>'
             st.markdown(original_title, unsafe_allow_html=True)
             st.write("""**Pedidos:** 60 O/D (22%)
-                        **Modelo:** Directo""")
-            st.write("""**Delivery:** 8.723""")
+                        **Modelo:** Shoppers""")
+            st.write("""**Costo:** 8.723""")
             st.write("""**Costo x Orden:** 19%""")
      
         with col3:
             original_title = '<p style="color:pink; font-weight: bold; font-size: 25px;">Silva Carvallo</p>'
             st.markdown(original_title, unsafe_allow_html=True)
             st.write("""**Pedidos:** 31 O/D (15%)
-                        **Modelo:** Directo""")
-            st.write("""**Delivery:** 12.786""")
+                        **Modelo:** Shoppers""")
+            st.write("""**Costo:** 12.786""")
             st.write("""**Costo x Orden:** 28%""")
             
         with col4:
             original_title = '<p style="color:purple; font-weight: bold; font-size: 25px;">Camino Nos</p>'
             st.markdown(original_title, unsafe_allow_html=True)
             st.write("""**Pedidos:** 8 O/D (3%)
-                        **Modelo:** Directo""")
-            st.write("""**Delivery:** 18.458""")
+                        **Modelo:** Shoppers""")
+            st.write("""**Costo:** 18.458""")
             st.write("""**Costo x Orden:** 41%""")
 
 
