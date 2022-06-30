@@ -458,9 +458,11 @@ def run_UI():
         #tooltip = "MFC"
         #folium.Marker([-33.35674849571172, -70.54006548079522], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip).add_to(map_sby_2)
 
-        tooltip = "MFC"
+        tooltip = "On-Demand"
         folium.Marker([-33.35674849571172, -70.54006548079522], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_2)
 
+        tooltip = "MFC"
+        folium.Marker([-33.3512146544498, -70.47307462804237], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip,icon=folium.Icon(color='red')).add_to(map_sby_2)
 
         tooltip = "Militares"
         folium.Marker([-33.403718655851755, -70.5685695153448], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_2)
@@ -608,10 +610,10 @@ def run_UI():
             st.write("""**Costo x Orden:** 34%""")
         
         with col2:
-            original_title = '<p style="color:grey; font-weight: bold; font-size: 25px;">Shoppers</p>'
+            original_title = '<p style="color:grey; font-weight: bold; font-size: 25px;">Picking & Driver</p>'
             st.markdown(original_title, unsafe_allow_html=True)
             st.write("""**Pedidos:** 301 O/D (30%)""")
-            st.write("""**Modelo:** Shoppers Silva y Mirador""")
+            st.write("""**Modelo:** P&D Silva y Mirador""")
             st.write("""**Costo:** 10.038""")
             st.write("""**Costo x Orden:** 22%""")
 
@@ -639,9 +641,12 @@ def run_UI():
         original_title = '<p style="color:Black; font-size: 20px;">Mapa de Santiago</p>'
         st.markdown(original_title, unsafe_allow_html=True)
 
-        tooltip = "MFC"
+        tooltip = "On-Demand"
         folium.Marker([-33.35674849571172, -70.54006548079522], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_3)
  
+        tooltip = "MFC"
+        folium.Marker([-33.3512146544498, -70.47307462804237], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip,icon=folium.Icon(color='red')).add_to(map_sby_3)
+
 
         tooltip = "Militares"
         folium.Marker([-33.403718655851755, -70.5685695153448], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_3)
@@ -781,15 +786,19 @@ def run_UI():
             st.markdown(original_title, unsafe_allow_html=True)
             st.write("""**Pedidos:** 201 O/D (21%)""")
             st.write("""**Modelo:** MFC Hub & Spoke""")
-            st.write("""**Costo:** 12.880""")
+            st.write("""**Costo Picking:** 3.530""")
+            st.write("""**Costo Camion:** 2.380""")
+            st.write("""**Costo Desconcilizacion:** 1.580""")
+            st.write("""**Costo Ultima Milla:** 5.550""")
+            st.write("""**Costo Total:** 12.880""")
             st.write("""**Costo x Orden:** 28%""")
             st.write("""**Costo Actual:** 34%""")
 
         with col2:
-            original_title = '<p style="color:grey; font-weight: bold; font-size: 25px;">Shoppers</p>'
+            original_title = '<p style="color:grey; font-weight: bold; font-size: 25px;">Picking & Driver</p>'
             st.markdown(original_title, unsafe_allow_html=True)
             st.write("""**Pedidos:** 301 O/D (30%)""")
-            st.write("""**Modelo:** Shoppers Silva y Mirador""")
+            st.write("""**Modelo:** P&D Silva y Mirador""")
             st.write("""**Costo:** 10.038""")
             st.write("""**Costo x Orden:** 22%""")
 
@@ -798,7 +807,9 @@ def run_UI():
 
     if page == 'MFC 2000 Pedidos':
         st.sidebar.write("""
-            ### Consideración MFC con 2000 pedidos""")
+            ### Consideración MFC con 2000 pedidos
+             **1.MF2 o Apertura de Tiendas**: En base a esta demanda, la cantidad de tiendas actuales no dan abastado operacionalmente para cumplir con la demanda
+             por lo que, se requiere abrir más tiendas o otro MFC""")
         st.header("MFC 2000 Pedidos: MFC2 o nuevas tiendas")
         
 
@@ -819,9 +830,12 @@ def run_UI():
         original_title = '<p style="color:Black; font-size: 20px;">Mapa de Santiago</p>'
         st.markdown(original_title, unsafe_allow_html=True)
 
-        tooltip = "MFC"
+        tooltip = "On-Demand"
         folium.Marker([-33.35674849571172, -70.54006548079522], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_4)
       
+        tooltip = "MFC"
+        folium.Marker([-33.3512146544498, -70.47307462804237], popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip,icon=folium.Icon(color='red')).add_to(map_sby_4)
+
 
         tooltip = "Militares"
         folium.Marker([-33.403718655851755, -70.5685695153448], radius=2, popup="<i>Mt. Hood Meadows</i>", tooltip=tooltip, icon=folium.Icon(color='pink')).add_to(map_sby_4)
@@ -961,10 +975,10 @@ def run_UI():
             st.write("""**Costo Actual:** 34%""")
 
         with col2:
-            original_title = '<p style="color:grey; font-weight: bold; font-size: 25px;">Shoppers</p>'
+            original_title = '<p style="color:grey; font-weight: bold; font-size: 25px;">Picking & Driver</p>'
             st.markdown(original_title, unsafe_allow_html=True)
             st.write("""**Pedidos:** 723 O/D (36%)""")
-            st.write("""**Modelo:** Shoppers Silva, Mirador y Consistorial""")
+            st.write("""**Modelo:** P&D Silva, Mirador y Consistorial""")
             st.write("""**Costo:** 9.995""")
             st.write("""**Costo x Orden:** 22%""")
 
